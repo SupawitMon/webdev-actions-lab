@@ -7,12 +7,53 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="card">
-    <h1>My Web Development Lab — Continuous Deployment</h1>
-    <p>ชื่อ: ศุภวิชญ์ จิตรดี | รหัสนิสิต: 67160372</p>
-    <p id="status">Ready to deploy</p>
-    <button id="helloBtn">Say Hello</button>
+  <header class="topbar">
+    <span class="brand">My Web Development Lab</span>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeBtn" class="ghost" aria-pressed="false">🌙 Dark</button>
+  </header>
+
+  <main>
+    <section class="card hero">
+      <h1>My Web Development Lab — Continuous Deployment</h1>
+      <p>ชื่อ: ศุภวิชญ์ จิตรดี | รหัสนิสิต: 67160372</p>
+      <p id="status">Ready to deploy</p>
+      <button id="helloBtn">Say Hello</button>
+    </section>
+
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>สวัสดีครับ ผมเป็นนิสิตที่สนใจการพัฒนาเว็บไซต์และระบบอัตโนมัติ
+         เว็บนี้สร้างด้วย HTML, CSS และ JavaScript แล้ว Deploy ขึ้น GitHub Pages
+         ผ่าน GitHub Actions ทุกครั้งที่ Push โค้ดขึ้น branch main</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Git &amp; GitHub</li>
+        <li>GitHub Actions</li>
+        <li>GitHub Pages</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <ul class="contact">
+        <li>GitHub: <a href="https://github.com/SupawitMon" target="_blank" rel="noopener">github.com/SupawitMon</a></li>
+        <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+      </ul>
+    </section>
   </main>
+
+  <footer>© 2026 ศุภวิชญ์ จิตรดี · Deployed with GitHub Actions</footer>
   <script src="script.js"></script>
 </body>
 </html>
